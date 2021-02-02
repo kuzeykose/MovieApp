@@ -14,6 +14,7 @@ export const rootReducer = combineReducers({
 export type RootState = {
   top10: {
     list: Array<Object>
+    listTv: Array<Object>
   },
   favourites: {
     favouritesList: Array<Object>

@@ -56,7 +56,7 @@ const MovieCard = ({ poster, title, overview }: CardProps) => {
   }
 
   return (
-    <div style={{ margin: 10 }}>
+    <div style={{ margin: 10, borderStyle: 'solid', borderWidth: '0.1px', borderColor: '#292929' }}>
       <Card
         onClick={info}
         hoverable

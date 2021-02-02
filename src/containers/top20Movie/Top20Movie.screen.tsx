@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react'
 import MovieCard from '../../components/MovieCard'
-import { Row, Button, Space } from 'antd';
+import { Row, Typography, Button, Space } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import { getTop10 } from '../../redux/ducks/top10'
 import { RootState } from '../../redux/ducks';
 
-const Top10 = () => {
+const { Title } = Typography;
+
+const Top20 = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getTop10())
@@ -25,6 +27,7 @@ const Top10 = () => {
 
   return (
     <div>
+      <Title style={{ marginLeft: 100 }} level={2}>Weekly TOP20 Movie</Title>
       <Space size='large'>
         <Row style={{ justifyContent: 'center' }}>
           {Top20Movies}
@@ -34,4 +37,4 @@ const Top10 = () => {
   )
 }
 
-export default Top10
+export default Top20

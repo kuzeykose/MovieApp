@@ -57,24 +57,19 @@ const SearchScreen = () => {
 
   return (
     <div>
-      <Row style={{ marginTop: 50 }}>
-        <Col span={12} offset={6}>
-          <Search
-            placeholder="Search amazing movie!"
-            onSearch={onSearch}
-            enterButton
-            size='large'
-            style={{ alignItems: 'center', justifyContent: 'center', width: 650 }}
-          />
-        </Col>
-      </Row>
-
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 60 }}>
+        <Search
+          placeholder="Search amazing movie!"
+          onSearch={onSearch}
+          size='large'
+          style={{ width: 650 }}
+        />
+      </div>
       <Space size='large'>
         <Row style={{ justifyContent: 'center' }}>
           {Search20Items}
         </Row>
       </Space>
-
     </div>
   )
 }
