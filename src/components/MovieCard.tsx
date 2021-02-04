@@ -67,10 +67,10 @@ const MovieCard = ({ poster, title, overview }: CardProps) => {
             src={`https://image.tmdb.org/t/p/w500${poster}`}
           />
         }>
-        <Meta
+        {/* <Meta
           title={title}
           description={overview.substring(0, 100) + '...'}
-        />
+        /> */}
       </Card>
 
     </div>

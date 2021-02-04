@@ -13,11 +13,13 @@ import {
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </Router>
+    <div style={{ backgroundColor: 'black' }}>
+      <Router>
+        <Provider store={store}>
+          <App />
+        </Provider>
+      </Router>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

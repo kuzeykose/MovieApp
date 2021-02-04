@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import MovieCard from '../../components/MovieCard'
-import { Row, Space, Input, Col } from 'antd';
+import { Row, Space, Input } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   getSearchItems,
   setSearchItem
 } from '../../redux/ducks/search'
 import {
-  Switch,
-  Route,
   useRouteMatch,
-  useLocation,
   useHistory,
 } from 'react-router-dom';
 import { RootState } from '../../redux/ducks';
@@ -18,7 +15,8 @@ import { RootState } from '../../redux/ducks';
 const { Search } = Input;
 
 const SearchScreen = () => {
-  let { path, url } = useRouteMatch();
+
+  let { url } = useRouteMatch();
   let history = useHistory();
   const [searchText, setSearchText] = useState('')
 

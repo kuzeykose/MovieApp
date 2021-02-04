@@ -30,7 +30,6 @@ const Welcome = () => {
   }, []);
 
   return (
-
     <div style={{ display: 'flex', alignItems: 'end', justifyContent: 'center', }}>
       <div style={{ color: 'white', justifyContent: 'center', marginTop: 200 }}>
         <img id='image1' src={image} style={{ position: 'absolute', height: 500, width: 500, zIndex: 0 }} />

@@ -11,7 +11,7 @@ import {
 const GET_TOP10 = 'GET_TOP10';
 const GET_TOP20_TV = 'GET_TOP20_TV';
 
-export const getTop10 = createAsyncAction(GET_TOP10, async () => {
+export const getTop20Movie = createAsyncAction(GET_TOP10, async () => {
   const data = await fetchTop10()
   return data
 });
@@ -29,7 +29,7 @@ const initialState = {
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
-    case String(getTop10.fulfilled):
+    case String(getTop20Movie.fulfilled):
       return {
         ...state,
         list: action.payload,
